@@ -1,0 +1,86 @@
+ยกตัวอย่างเนื้อหาการสอน git 
+
+git clone ...
+
+------------------รอบ 2
+git status
+git add .
+git commit -m "Update files and add new file"
+git push origin main
+-----------------branch main == Mono
+
+git status
+
+
+AppMonoตอยร่า> ggit status
+On branch main
+
+No commits yet
+// No == false == git commit - m "message"
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        --------------1 copy 2.txt
+        --------------1 copy 3.txt
+        --------------1 copy 4.txt
+        --------------1 copy 5.txt
+        --------------1 copy 6.txt
+        --------------1 copy 7.txt
+        --------------1 copy 8.txt
+        --------------1 copy 9.txt
+        --------------1 copy.txt
+        --------------1.txt     
+// red == gid add . == green== ture 
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\ttdd1\OneDrive\code\AppMonoตอยร่า>
+
+
+AppMonoตอยร่า> ggit status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\ttdd1\OneDrive\code\AppMonoตอยร่า>
+git remote add origin https://github.com/Thanachai187/31-10-67.git
+git push -u origin main
+
+
+PS C:\Users\ttdd1\OneDrive\code\AppMonoตอยร่า> ggit config --global user.name "Thanachai187"     
+>> git config --global user.email "khemw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git status
+
+
+AppMonoตอยร่า> เgit status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:  
+  (use "git add <file>..." to update what will be committed)    
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   --------------1 copy 2.txt
+//red == 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        --------------1 copy 10.txt
+//red == git add . 
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\ttdd1\OneDrive\code\AppMonoตอยร่า>
+
+git commit -m "Update files and add new file"
+
+
+git push origin main
