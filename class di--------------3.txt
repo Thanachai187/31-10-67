@@ -1,0 +1,28 @@
+lm
++----------------+             +----------------+           +----------------+           +----------------+
+|     User       |             |    Profile     |           |    Message     |           |   Friendship   |
++----------------+             +----------------+           +----------------+           +----------------+
+| - userId       |             | - profileId    |           | - messageId    |           | - friendshipId |
+| - username     |             | - displayName  |           | - content      |           | - status       |
+| - email        |             | - profilePic   |           | - sentAt       |           | - createdAt    |
+| - password     |             | - status       |           | - status       |           |                |
+| - createdAt    |             | - bio          |           +----------------+           +----------------+
+| - updatedAt    |             | - lastOnline   |
++----------------+             +----------------+
+| + register()   |             | + updateStatus()|
+| + login()      |             | + updateProfile()|
+| + logout()     |             +----------------+
++----------------+
+
+                        +----------------+
+                        |     Admin      |
+                        +----------------+
+                        | - adminId      |
+                        | - username     |
+                        | - password     |
+                        | - role         |
+                        | - createdAt    |
+                        +----------------+
+                        | + addAdmin()   |
+                        | + removeAdmin()|
+                        +----------------+

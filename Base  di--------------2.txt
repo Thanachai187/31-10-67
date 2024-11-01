@@ -1,0 +1,21 @@
++----------------+     +----------------+     +----------------+     +----------------+
+|     Users      |     |   Profiles     |     |   Messages     |     |    Friends     |
++----------------+     +----------------+     +----------------+     +----------------+
+| user_id (PK)   |<----| profile_id (PK)|     | message_id (PK)|     | friendship_id (PK)|
+| username       |     | user_id (FK)   |<----| sender_id (FK) |     | user_id (FK)   |
+| email          |     | display_name   |     | receiver_id (FK)|<----| friend_id (FK) |
+| password       |     | profile_picture|     | content        |     | status         |
+| created_at     |     | status         |     | sent_at        |     | created_at     |
+| updated_at     |     | bio            |     | status         |     +----------------+
++----------------+     | last_online    |     +----------------+
+                       +----------------+
+
++----------------+
+|     Admins     |
++----------------+
+| admin_id (PK)  |
+| username       |
+| password       |
+| role           |
+| created_at     |
++----------------+
